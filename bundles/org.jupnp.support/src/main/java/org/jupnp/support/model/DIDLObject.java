@@ -737,7 +737,7 @@ public abstract class DIDLObject {
     }
 
     public Res getFirstResource() {
-        return getResources().isEmpty() ? getResources().get(0) : null;
+        return getResources().isEmpty() ? null : getResources().get(0);
     }
 
     public List<Res> getResources() {
